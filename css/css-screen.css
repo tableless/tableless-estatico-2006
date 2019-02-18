@@ -1,0 +1,192 @@
+* {
+	/* Começo zerando tudo. O * quer dizer TUDO, felizmente o IE aceita isso */
+	text-decoration:none;
+	margin:0;
+	padding:0;
+	list-style:none;
+	vertical-align:middle;
+	border:none;
+}
+
+/** O que muita gente não sabe, é que pode colocar CSS na tag HTML. Isso lhe dá liberdade, você ganha 1 tag */
+html {
+	text-align:center;
+	background:#BF0000 url(imagens/fundo-sombra.png) repeat-Y center center;
+}
+
+body {
+	background:url(imagens/fundo-degrade.gif) repeat-X left top;
+}
+
+/************************************
+#GERAL 
+************************************/
+#geral {
+	margin:0 auto;
+	width:851px;
+	padding:0 10px;
+	background:url(imagens/fundo-geral.png) no-repeat center top;
+}
+
+/************************************
+#TOPO
+************************************/
+#topo {
+	padding:25px 0;
+	text-align:left;
+}
+
+#topo h1 {
+	text-indent:-5000em;
+	overflow:hidden;
+	height:112px;
+	width:100%;
+	background:url(imagens/logo.png) no-repeat center center;
+}
+#topo h1 a {display:block; height:112px;}
+
+#menu {
+	height:31px;
+	background:url(imagens/fundo-menu.png) repeat-X;
+	margin:10px 1px 0;
+}
+
+#menu ul {
+	margin:0 auto;
+	width:610px;
+}
+
+#menu ul li {display:inline;}
+
+#menu ul li a {
+	float:left;
+	font:bold 100% 'Trebuchet Ms', Verdana, Aria, Tahoma;
+	color:white;
+	padding:5px 15px;
+	text-transform:uppercase;
+}
+
+#menu ul li a:hover {background:url(imagens/fundo-menu-hover.png) repeat-X;}
+
+/************************************
+#CONTEUDO
+************************************/
+#conteudo {
+	width:803px;
+	margin:0 auto;
+	text-align:left;
+}
+
+#texto {
+	width:535px;
+	margin:;
+	float:right;
+}
+
+#texto p {
+	font:70% Verdana, Arial;
+	color:#424242;
+	margin-bottom:15px;
+	line-height:15px;
+}
+
+#texto h2 {
+	font:bold 130% 'Trebuchet Ms', verdana, Arial, tahoma;
+	text-transform:uppercase;
+}
+
+#texto h4 {
+	font:bold 70% 'Trebuchet Ms', verdana, Arial, tahoma;
+	color:#587509;
+	margin-bottom:3px;
+}
+
+#texto div.comente {
+	font:70% Verdana;
+	padding:10px 10px 30px;
+	background:url(imagens/pontinhos.png) repeat-X left top;
+	color:#587509;
+}
+
+#texto a.comentarios {float:right; color:#587509;}
+
+/* COLUNA DE INFORMACOES */
+#informacoes {
+	width:226px;
+	float:left;
+	text-align:center;
+}
+#informacoes form fieldset {border:none;}
+#informacoes form legend {display:none;}
+
+#informacoes h5 {
+	text-align:left;
+	color:white;
+	font:100% 'Trebuchet ms', Verdana, Arial, Tahoma;
+	text-transform:uppercase;
+	background:url(imagens/tit-fundo.png) repeat-X;
+	padding:3px 10px 5px;
+	margin:20px 0 0;
+}
+
+#informacoes ul li {
+	text-align:right;
+	background:url(imagens/pontinhos.png) repeat-X left top;
+	display:block;
+	width:100%;
+}
+
+#informacoes ul li a {
+	display:block;
+	font:90% Verdana, Arial;
+	color:#BF0000;
+	padding:7px 10px;
+}
+
+#informacoes ul#listahistorico li a {background:url(imagens/setinha-baixo.gif) no-repeat 10px center;}
+
+#informacoes ul#listahistorico li.aberto {background:#F0F0F0 url(imagens/fundo-historico.gif) no-repeat -30px -50px;}
+#informacoes ul#listahistorico li.aberto a {
+	background:none;
+	color:#262626;
+	padding:0;
+	padding:5px 10px;
+	font-weight:bold;
+}
+#informacoes ul#listahistorico li.aberto ul li a {font:normal 80% Verdana;}
+
+#assine {margin:25px 0 0;}
+ul#assine li {background:none;}
+ul#assine a {
+	display:block;
+	text-indent:-5000px;
+	background-repeat:no-repeat;
+	width:227px;
+	height:111px;
+	text-align:left;
+}
+
+ul#assine li a.assinefeed {background-image:url(imagens/selo-rss.png);}
+ul#assine li a.assinepodcast {background-image:url(imagens/selo-podcast.png);}
+
+
+/************************************
+RODAPE
+************************************/
+#rodape {
+	clear:both;
+	font:bold 70% Verdana, Arial;
+	color:#B2B2B2;
+	padding:100px 15px 30px;
+}
+
+#rodape a.logopeq {
+	text-indent:-5000px;
+	overflow:none;
+	background:url(imagens/logo-peq.png) no-repeat;
+	width:127px;
+	height:40px;
+	float:left;
+}
+
+#rodape img {float:right;}
